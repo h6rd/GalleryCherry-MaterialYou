@@ -1,0 +1,1352 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="me.devsaki.cherry"
+4    android:installLocation="auto"
+5    android:versionCode="130"
+6    android:versionName="1.14.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="26"
+9-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:8:5-76
+14-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:8:22-73
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:9:5-80
+15-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:9:22-77
+16    <!-- Somehow needed by Firebase for reliable local dispatching on non-Google Play devices -->
+17    <uses-permission android:name="android.permission.WAKE_LOCK" />
+17-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:11:5-68
+17-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:11:22-65
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:12:5-81
+18-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:13:5-66
+19-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:13:22-63
+20    <!-- Required to install update packages when targeting API 25 or higher -->
+21    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+21-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:15:5-83
+21-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:15:22-80
+22    <!-- Required to run keep-alive service when targeting API 28 or higher -->
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+23-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:17:5-77
+23-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:17:22-74
+24    <!-- Required to install update packages when targeting API 29 or higher -->
+25    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+25-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:19:5-81
+25-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:19:22-78
+26    <!-- Required to fire notifications when targeting API 33 or higher -->
+27    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+27-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:21:5-77
+27-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:21:22-74
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+28-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:26:22-107
+29    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+29-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:25:5-79
+29-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:25:22-76
+30    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+30-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:25:5-81
+30-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:25:22-78
+31
+32    <permission
+32-->[androidx.core:core:1.10.0] C:\Users\hrdq\.gradle\caches\transforms-3\5d9dbed0e9431e4af028d9a217aeb101\transformed\core-1.10.0\AndroidManifest.xml:22:5-24:47
+33        android:name="me.devsaki.cherry.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+33-->[androidx.core:core:1.10.0] C:\Users\hrdq\.gradle\caches\transforms-3\5d9dbed0e9431e4af028d9a217aeb101\transformed\core-1.10.0\AndroidManifest.xml:23:9-81
+34        android:protectionLevel="signature" />
+34-->[androidx.core:core:1.10.0] C:\Users\hrdq\.gradle\caches\transforms-3\5d9dbed0e9431e4af028d9a217aeb101\transformed\core-1.10.0\AndroidManifest.xml:24:9-44
+35
+36    <uses-permission android:name="me.devsaki.cherry.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+36-->[androidx.core:core:1.10.0] C:\Users\hrdq\.gradle\caches\transforms-3\5d9dbed0e9431e4af028d9a217aeb101\transformed\core-1.10.0\AndroidManifest.xml:26:5-97
+36-->[androidx.core:core:1.10.0] C:\Users\hrdq\.gradle\caches\transforms-3\5d9dbed0e9431e4af028d9a217aeb101\transformed\core-1.10.0\AndroidManifest.xml:26:22-94
+37
+38    <application
+38-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:23:5-489:19
+39        android:name="me.devsaki.hentoid.core.HentoidApp"
+39-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:24:9-40
+40        android:allowBackup="false"
+40-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:25:9-36
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.10.0] C:\Users\hrdq\.gradle\caches\transforms-3\5d9dbed0e9431e4af028d9a217aeb101\transformed\core-1.10.0\AndroidManifest.xml:28:18-86
+42        android:extractNativeLibs="true"
+42-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:26:9-41
+43        android:icon="@mipmap/ic_launcher"
+43-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:27:9-43
+44        android:label="@string/app_name"
+44-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:28:9-41
+45        android:largeHeap="true"
+45-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:29:9-33
+46        android:localeConfig="@xml/locales_config"
+46-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:30:9-51
+47        android:roundIcon="@mipmap/ic_launcher"
+47-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:31:9-48
+48        android:supportsRtl="false"
+48-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:32:9-36
+49        android:theme="@style/Theme.Light"
+49-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:33:9-43
+50        android:usesCleartextTraffic="true" >
+50-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:34:9-44
+51        <meta-data
+51-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:37:9-39:36
+52            android:name="android.webkit.WebView.MetricsOptOut"
+52-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:38:13-64
+53            android:value="true" />
+53-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:39:13-33
+54
+55        <activity
+55-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:41:9-45:40
+56            android:name="me.devsaki.hentoid.activities.MissingWebViewActivity"
+56-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:42:13-62
+57            android:exported="false"
+57-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:43:13-37
+58            android:label="@string/missing_web_view"
+58-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:44:13-53
+59            android:noHistory="true" />
+59-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:45:13-37
+60        <activity
+60-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:46:9-54:20
+61            android:name="me.devsaki.hentoid.activities.SplashActivity"
+61-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:47:13-54
+62            android:exported="true"
+62-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:48:13-36
+63            android:noHistory="true" >
+63-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:49:13-37
+64            <intent-filter>
+64-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:50:13-53:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:51:17-69
+65-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:51:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:52:17-77
+67-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:52:27-74
+68            </intent-filter>
+69        </activity>
+70        <activity
+70-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:55:9-57:49
+71            android:name="me.devsaki.hentoid.activities.IntroActivity"
+71-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:56:13-53
+72            android:label="@string/app_intro" />
+72-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:57:13-46
+73        <activity
+73-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:58:9-60:62
+74            android:name="me.devsaki.hentoid.activities.sources.XhamsterActivity"
+74-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:59:13-64
+75            android:configChanges="orientation|screenSize" />
+75-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:60:13-59
+76        <activity
+76-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:61:9-63:62
+77            android:name="me.devsaki.hentoid.activities.sources.XnxxActivity"
+77-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:62:13-60
+78            android:configChanges="orientation|screenSize" />
+78-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:63:13-59
+79        <activity
+79-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:64:9-66:62
+80            android:name="me.devsaki.hentoid.activities.sources.PornPicsActivity"
+80-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:65:13-64
+81            android:configChanges="orientation|screenSize" />
+81-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:66:13-59
+82        <activity
+82-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:67:9-69:62
+83            android:name="me.devsaki.hentoid.activities.sources.JpegworldActivity"
+83-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:68:13-65
+84            android:configChanges="orientation|screenSize" />
+84-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:69:13-59
+85        <activity
+85-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:70:9-72:62
+86            android:name="me.devsaki.hentoid.activities.sources.NextpicturezActivity"
+86-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:71:13-68
+87            android:configChanges="orientation|screenSize" />
+87-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:72:13-59
+88        <activity
+88-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:73:9-75:62
+89            android:name="me.devsaki.hentoid.activities.sources.HellpornoActivity"
+89-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:74:13-65
+90            android:configChanges="orientation|screenSize" />
+90-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:75:13-59
+91        <activity
+91-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:76:9-78:62
+92            android:name="me.devsaki.hentoid.activities.sources.PornPicGalleriesActivity"
+92-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:77:13-72
+93            android:configChanges="orientation|screenSize" />
+93-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:78:13-59
+94        <activity
+94-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:79:9-81:62
+95            android:name="me.devsaki.hentoid.activities.sources.Link2GalleriesActivity"
+95-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:80:13-70
+96            android:configChanges="orientation|screenSize" />
+96-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:81:13-59
+97        <activity
+97-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:82:9-84:62
+98            android:name="me.devsaki.hentoid.activities.sources.RedditActivity"
+98-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:83:13-62
+99            android:configChanges="orientation|screenSize" />
+99-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:84:13-59
+100        <activity
+100-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:85:9-87:62
+101            android:name="me.devsaki.hentoid.activities.sources.RedditLaunchActivity"
+101-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:86:13-68
+102            android:configChanges="orientation|screenSize" />
+102-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:87:13-59
+103        <activity
+103-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:88:9-90:62
+104            android:name="me.devsaki.hentoid.activities.sources.JjgirlsActivity"
+104-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:89:13-63
+105            android:configChanges="orientation|screenSize" />
+105-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:90:13-59
+106        <activity
+106-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:91:9-93:62
+107            android:name="me.devsaki.hentoid.activities.sources.Jjgirls2Activity"
+107-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:92:13-64
+108            android:configChanges="orientation|screenSize" />
+108-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:93:13-59
+109        <activity
+109-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:94:9-96:62
+110            android:name="me.devsaki.hentoid.activities.sources.BabeTodayActivity"
+110-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:95:13-65
+111            android:configChanges="orientation|screenSize" />
+111-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:96:13-59
+112        <activity
+112-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:97:9-99:62
+113            android:name="me.devsaki.hentoid.activities.sources.LusciousActivity"
+113-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:98:13-64
+114            android:configChanges="orientation|screenSize" />
+114-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:99:13-59
+115        <activity
+115-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:100:9-102:62
+116            android:name="me.devsaki.hentoid.activities.sources.FapalityActivity"
+116-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:101:13-64
+117            android:configChanges="orientation|screenSize" />
+117-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:102:13-59
+118        <activity
+118-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:103:9-105:62
+119            android:name="me.devsaki.hentoid.activities.sources.AsianSisterActivity"
+119-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:104:13-67
+120            android:configChanges="orientation|screenSize" />
+120-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:105:13-59
+121        <activity
+121-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:106:9-114:20
+122            android:name="me.devsaki.hentoid.activities.LibraryActivity"
+122-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:107:13-55
+123            android:configChanges="orientation|screenSize"
+123-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:108:13-59
+124            android:label="@string/title_activity_downloads"
+124-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:109:13-61
+125            android:launchMode="singleTop" >
+125-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:110:13-43
+126            <meta-data
+126-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:111:13-113:54
+127                android:name="android.app.searchable"
+127-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:112:17-54
+128                android:resource="@xml/searchable" />
+128-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:113:17-51
+129        </activity>
+130        <activity
+130-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:115:9-124:20
+131            android:name="me.devsaki.hentoid.activities.QueueActivity"
+131-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:116:13-53
+132            android:configChanges="orientation|screenSize"
+132-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:117:13-59
+133            android:label="@string/title_activity_queue"
+133-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:118:13-57
+134            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity" >
+134-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:119:13-69
+135            <meta-data
+135-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:121:13-123:63
+136                android:name="android.support.PARENT_ACTIVITY"
+136-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:122:17-63
+137                android:value=".activities.LibraryActivity" />
+137-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:123:17-60
+138        </activity>
+139        <activity
+139-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:125:9-135:20
+140            android:name="me.devsaki.hentoid.activities.PrefsActivity"
+140-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:126:13-53
+141            android:configChanges="orientation|screenSize"
+141-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:127:13-59
+142            android:label="@string/title_activity_settings"
+142-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:128:13-60
+143            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity"
+143-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:129:13-69
+144            android:theme="@style/Theme.Light.Prefs" >
+144-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:130:13-53
+145            <meta-data
+145-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:121:13-123:63
+146                android:name="android.support.PARENT_ACTIVITY"
+146-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:122:17-63
+147                android:value=".activities.LibraryActivity" />
+147-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:123:17-60
+148        </activity>
+149        <activity
+149-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:136:9-146:20
+150            android:name="me.devsaki.hentoid.activities.ToolsActivity"
+150-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:137:13-53
+151            android:configChanges="orientation|screenSize"
+151-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:138:13-59
+152            android:label="@string/title_activity_settings"
+152-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:139:13-60
+153            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity"
+153-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:140:13-69
+154            android:theme="@style/Theme.Light.Prefs" >
+154-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:141:13-53
+155            <meta-data
+155-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:121:13-123:63
+156                android:name="android.support.PARENT_ACTIVITY"
+156-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:122:17-63
+157                android:value=".activities.LibraryActivity" />
+157-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:123:17-60
+158        </activity>
+159        <activity
+159-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:147:9-155:20
+160            android:name="me.devsaki.hentoid.activities.AboutActivity"
+160-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:148:13-53
+161            android:label="@string/title_activity_about"
+161-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:149:13-57
+162            android:parentActivityName="me.devsaki.hentoid.activities.LibraryActivity" >
+162-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:150:13-69
+163            <meta-data
+163-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:121:13-123:63
+164                android:name="android.support.PARENT_ACTIVITY"
+164-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:122:17-63
+165                android:value=".activities.LibraryActivity" />
+165-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:123:17-60
+166        </activity>
+167        <activity
+167-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:156:9-159:46
+168            android:name="me.devsaki.hentoid.activities.DrawerEditActivity"
+168-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:157:13-58
+169            android:label="@string/title_activity_drawer_edit" />
+169-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:158:13-63
+170        <activity
+170-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:160:9-163:46
+171            android:name="me.devsaki.hentoid.activities.DuplicateDetectorActivity"
+171-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:161:13-65
+172            android:label="@string/title_activity_duplicate_detector" />
+172-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:162:13-70
+173        <activity
+173-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:164:9-167:46
+174            android:name="me.devsaki.hentoid.activities.SearchActivity"
+174-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:165:13-54
+175            android:label="@string/title_activity_search" />
+175-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:166:13-58
+176        <activity
+176-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:168:9-172:52
+177            android:name="me.devsaki.hentoid.activities.UnlockActivity"
+177-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:169:13-54
+178            android:noHistory="true"
+178-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:170:13-37
+179            android:resizeableActivity="false"
+179-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:171:13-47
+180            android:screenOrientation="portrait" />
+180-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:172:13-49
+181        <activity
+181-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:173:9-176:52
+182            android:name="me.devsaki.hentoid.activities.PinPreferenceActivity"
+182-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:174:13-61
+183            android:resizeableActivity="false"
+183-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:175:13-47
+184            android:screenOrientation="portrait" />
+184-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:176:13-49
+185        <activity
+185-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:177:9-180:46
+186            android:name="me.devsaki.hentoid.activities.MetadataEditActivity"
+186-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:178:13-60
+187            android:label="@string/title_activity_meta_edit" />
+187-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:179:13-61
+188        <activity
+188-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:181:9-184:46
+189            android:name="me.devsaki.hentoid.activities.RenamingRulesActivity"
+189-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:182:13-61
+190            android:label="@string/title_activity_rules" />
+190-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:183:13-57
+191        <activity
+191-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:185:9-188:46
+192            android:name="me.devsaki.hentoid.activities.StoragePreferenceActivity"
+192-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:186:13-65
+193            android:label="@string/title_activity_storage" />
+193-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:187:13-59
+194        <activity
+194-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:189:9-436:20
+195            android:name="me.devsaki.hentoid.activities.IntentActivity"
+195-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:190:13-54
+196            android:exported="true"
+196-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:191:13-36
+197            android:theme="@style/Theme.Invisible" >
+197-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:192:13-51
+198            <intent-filter>
+198-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:193:13-197:29
+199                <action android:name="android.intent.action.SEND" />
+199-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:194:17-69
+199-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:194:25-66
+200
+201                <category android:name="android.intent.category.DEFAULT" />
+201-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+201-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+202
+203                <data android:mimeType="text/plain" />
+203-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+203-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:23-52
+204            </intent-filter>
+205            <intent-filter>
+205-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:198:13-212:29
+206                <action android:name="android.intent.action.VIEW" />
+206-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+206-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+207
+208                <category android:name="android.intent.category.DEFAULT" />
+208-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+208-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+209                <category android:name="android.intent.category.BROWSABLE" />
+209-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+209-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+210
+211                <data
+211-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+212                    android:host="xhamster.com"
+212-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+213                    android:pathPrefix="/photos"
+213-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+214                    android:scheme="https" />
+214-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+215                <data
+215-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+216                    android:host="www.nhentai.net"
+216-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+217                    android:pathPrefix="/g/"
+217-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+218                    android:scheme="https" />
+218-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+219            </intent-filter>
+220            <intent-filter>
+220-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:213:13-223:29
+221                <action android:name="android.intent.action.VIEW" />
+221-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+221-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+222
+223                <category android:name="android.intent.category.DEFAULT" />
+223-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+223-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+224                <category android:name="android.intent.category.BROWSABLE" />
+224-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+224-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+225
+226                <data
+226-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+227                    android:host="multi.xnxx.com"
+227-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+228                    android:pathPrefix="/gallery"
+228-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+229                    android:scheme="https" />
+229-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+230            </intent-filter>
+231            <intent-filter>
+231-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:224:13-234:29
+232                <action android:name="android.intent.action.VIEW" />
+232-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+232-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+233
+234                <category android:name="android.intent.category.DEFAULT" />
+234-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+234-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+235                <category android:name="android.intent.category.BROWSABLE" />
+235-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+235-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+236
+237                <data
+237-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+238                    android:host="pornpics.com"
+238-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+239                    android:pathPrefix="/galleries"
+239-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+240                    android:scheme="https" />
+240-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+241            </intent-filter>
+242            <intent-filter>
+242-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:235:13-245:29
+243                <action android:name="android.intent.action.VIEW" />
+243-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+243-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+244
+245                <category android:name="android.intent.category.DEFAULT" />
+245-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+245-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+246                <category android:name="android.intent.category.BROWSABLE" />
+246-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+246-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+247
+248                <data
+248-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+249                    android:host="jpegworld.com"
+249-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+250                    android:pathPrefix="/galleries"
+250-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+251                    android:scheme="https" />
+251-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+252            </intent-filter>
+253            <intent-filter>
+253-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:246:13-256:29
+254                <action android:name="android.intent.action.VIEW" />
+254-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+254-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+255
+256                <category android:name="android.intent.category.DEFAULT" />
+256-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+256-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+257                <category android:name="android.intent.category.BROWSABLE" />
+257-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+257-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+258
+259                <data
+259-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+260                    android:host="nextpicturez.com"
+260-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+261                    android:pathPrefix="/gallery"
+261-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+262                    android:scheme="http" />
+262-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+263            </intent-filter>
+264            <intent-filter>
+264-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:257:13-267:29
+265                <action android:name="android.intent.action.VIEW" />
+265-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+265-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+266
+267                <category android:name="android.intent.category.DEFAULT" />
+267-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+267-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+268                <category android:name="android.intent.category.BROWSABLE" />
+268-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+268-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+269
+270                <data
+270-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+271                    android:host="young-whores.net"
+271-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+272                    android:pathPrefix="/gallery"
+272-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+273                    android:scheme="http" />
+273-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+274            </intent-filter>
+275            <intent-filter>
+275-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:268:13-278:29
+276                <action android:name="android.intent.action.VIEW" />
+276-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+276-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+277
+278                <category android:name="android.intent.category.DEFAULT" />
+278-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+278-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+279                <category android:name="android.intent.category.BROWSABLE" />
+279-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+279-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+280
+281                <data
+281-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+282                    android:host="hellporno.com"
+282-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+283                    android:pathPrefix="/albums"
+283-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:206:21-49
+284                    android:scheme="https" />
+284-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+285            </intent-filter>
+286            <intent-filter>
+286-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:279:13-289:29
+287                <action android:name="android.intent.action.VIEW" />
+287-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+287-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+288
+289                <category android:name="android.intent.category.DEFAULT" />
+289-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+289-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+290                <category android:name="android.intent.category.BROWSABLE" />
+290-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+290-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+291
+292                <data
+292-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+293                    android:host="jjgirls.com"
+293-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+294                    android:pathPattern="/..*/..*/..*/"
+294-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+295                    android:scheme="https" />
+295-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+296            </intent-filter>
+297            <intent-filter>
+297-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:290:13-312:29
+298                <action android:name="android.intent.action.VIEW" />
+298-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+298-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+299
+300                <category android:name="android.intent.category.DEFAULT" />
+300-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+300-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+301                <category android:name="android.intent.category.BROWSABLE" />
+301-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+301-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+302
+303                <data
+303-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+304                    android:host="luscious.net"
+304-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+305                    android:pathPattern="..*/..*"
+305-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+306                    android:scheme="https" />
+306-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+307                <data
+307-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+308                    android:host="www.luscious.net"
+308-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+309                    android:pathPattern="..*/..*"
+309-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+310                    android:scheme="https" />
+310-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+311                <data
+311-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+312                    android:host="members.luscious.net"
+312-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+313                    android:pathPattern="..*/..*"
+313-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+314                    android:scheme="https" />
+314-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+315                <data
+315-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+316                    android:host="www.members.luscious.net"
+316-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+317                    android:pathPattern="..*/..*"
+317-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+318                    android:scheme="https" />
+318-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+319            </intent-filter>
+320            <intent-filter>
+320-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:313:13-323:29
+321                <action android:name="android.intent.action.VIEW" />
+321-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+321-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+322
+323                <category android:name="android.intent.category.DEFAULT" />
+323-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+323-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+324                <category android:name="android.intent.category.BROWSABLE" />
+324-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+324-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+325
+326                <data
+326-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+327                    android:host="fapality.com"
+327-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+328                    android:pathPattern="/photos"
+328-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+329                    android:scheme="https" />
+329-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+330            </intent-filter>
+331            <intent-filter>
+331-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:324:13-334:29
+332                <action android:name="android.intent.action.VIEW" />
+332-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+332-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+333
+334                <category android:name="android.intent.category.DEFAULT" />
+334-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+334-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+335                <category android:name="android.intent.category.BROWSABLE" />
+335-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+335-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+336
+337                <data
+337-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+338                    android:host="asiansister.com"
+338-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+339                    android:pathPattern="/view_"
+339-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+340                    android:scheme="https" />
+340-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+341            </intent-filter>
+342            <intent-filter>
+342-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:335:13-345:29
+343                <action android:name="android.intent.action.VIEW" />
+343-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+343-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+344
+345                <category android:name="android.intent.category.DEFAULT" />
+345-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+345-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+346                <category android:name="android.intent.category.BROWSABLE" />
+346-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+346-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+347
+348                <data
+348-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+349                    android:host="jjgirls.com"
+349-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+350                    android:pathPattern="/pornpics/..*"
+350-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+351                    android:scheme="https" />
+351-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+352            </intent-filter>
+353            <intent-filter>
+353-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:346:13-376:29
+354                <action android:name="android.intent.action.VIEW" />
+354-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+354-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+355
+356                <category android:name="android.intent.category.DEFAULT" />
+356-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+356-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+357                <category android:name="android.intent.category.BROWSABLE" />
+357-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+357-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+358
+359                <data
+359-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+360                    android:host="pixiv.net"
+360-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+361                    android:pathPattern="/..*/artworks/..*"
+361-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+362                    android:scheme="https" />
+362-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+363                <data
+363-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+364                    android:host="pixiv.net"
+364-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+365                    android:pathPattern="/..*/user/..*/series/..*"
+365-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+366                    android:scheme="https" />
+366-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+367                <data
+367-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+368                    android:host="pixiv.net"
+368-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+369                    android:pathPattern="/..*/users/..*"
+369-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+370                    android:scheme="https" />
+370-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+371                <data
+371-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+372                    android:host="www.pixiv.net"
+372-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+373                    android:pathPattern="/..*/artworks/..*"
+373-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+374                    android:scheme="https" />
+374-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+375                <data
+375-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+376                    android:host="www.pixiv.net"
+376-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+377                    android:pathPattern="/..*/user/..*/series/..*"
+377-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+378                    android:scheme="https" />
+378-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+379                <data
+379-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+380                    android:host="www.pixiv.net"
+380-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+381                    android:pathPattern="/..*/users/..*"
+381-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+382                    android:scheme="https" />
+382-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+383            </intent-filter>
+384            <intent-filter>
+384-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:377:13-391:29
+385                <action android:name="android.intent.action.VIEW" />
+385-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+385-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+386
+387                <category android:name="android.intent.category.DEFAULT" />
+387-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+387-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+388                <category android:name="android.intent.category.BROWSABLE" />
+388-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+388-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+389
+390                <data
+390-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+391                    android:host="manhwa18.com"
+391-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+392                    android:pathPattern="/manga/..*"
+392-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+393                    android:scheme="https" />
+393-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+394                <data
+394-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+395                    android:host="manhwa18.com"
+395-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+396                    android:pathPattern="/manga/..*/..*"
+396-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+397                    android:scheme="https" />
+397-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+398            </intent-filter>
+399            <intent-filter>
+399-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:392:13-402:29
+400                <action android:name="android.intent.action.VIEW" />
+400-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+400-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+401
+402                <category android:name="android.intent.category.DEFAULT" />
+402-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+402-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+403                <category android:name="android.intent.category.BROWSABLE" />
+403-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+403-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+404
+405                <data
+405-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+406                    android:host="multporn.net"
+406-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+407                    android:pathPattern="/..*/..*"
+407-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+408                    android:scheme="https" />
+408-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+409            </intent-filter>
+410            <intent-filter>
+410-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:403:13-413:29
+411                <action android:name="android.intent.action.VIEW" />
+411-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+411-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+412
+413                <category android:name="android.intent.category.DEFAULT" />
+413-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+413-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+414                <category android:name="android.intent.category.BROWSABLE" />
+414-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+414-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+415
+416                <data
+416-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+417                    android:host="www.simply-hentai.com"
+417-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+418                    android:pathPattern="/..*/..*"
+418-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+419                    android:scheme="https" />
+419-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+420            </intent-filter>
+421            <intent-filter>
+421-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:414:13-424:29
+422                <action android:name="android.intent.action.VIEW" />
+422-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+422-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+423
+424                <category android:name="android.intent.category.DEFAULT" />
+424-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+424-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+425                <category android:name="android.intent.category.BROWSABLE" />
+425-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+425-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+426
+427                <data
+427-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+428                    android:host="hdporncomics.com"
+428-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+429                    android:pathPattern="/..*/"
+429-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+430                    android:scheme="https" />
+430-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+431            </intent-filter>
+432            <intent-filter>
+432-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:425:13-435:29
+433                <action android:name="android.intent.action.VIEW" />
+433-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:17-69
+433-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:199:25-66
+434
+435                <category android:name="android.intent.category.DEFAULT" />
+435-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:17-76
+435-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:195:27-73
+436                <category android:name="android.intent.category.BROWSABLE" />
+436-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:17-78
+436-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:202:27-75
+437
+438                <data
+438-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:196:17-55
+439                    android:host="edoujin.net"
+439-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:205:21-48
+440                    android:pathPattern="/manga/..*"
+440-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:287:21-56
+441                    android:scheme="https" />
+441-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:207:21-43
+442            </intent-filter>
+443        </activity>
+444        <activity
+444-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:438:9-445:20
+445            android:name="me.devsaki.hentoid.activities.ReaderActivity$ReaderActivityMulti"
+445-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:439:13-74
+446            android:label="Image Viewer"
+446-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:440:13-41
+447            android:theme="@style/Theme.Light.Monochrome" >
+447-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:441:13-58
+448            <meta-data
+448-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:121:13-123:63
+449                android:name="android.support.PARENT_ACTIVITY"
+449-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:122:17-63
+450                android:value=".activities.LibraryActivity" />
+450-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:123:17-60
+451        </activity>
+452        <activity
+452-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:447:9-455:20
+453            android:name="me.devsaki.hentoid.activities.ReaderActivity"
+453-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:448:13-54
+454            android:label="Image Viewer"
+454-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:449:13-41
+455            android:launchMode="singleTask"
+455-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:450:13-44
+456            android:theme="@style/Theme.Light.Monochrome" >
+456-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:451:13-58
+457            <meta-data
+457-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:121:13-123:63
+458                android:name="android.support.PARENT_ACTIVITY"
+458-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:122:17-63
+459                android:value=".activities.LibraryActivity" />
+459-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:123:17-60
+460        </activity>
+461
+462        <!-- Services -->
+463
+464        <service android:name="me.devsaki.hentoid.services.UpdateCheckService" />
+464-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:459:9-64
+464-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:459:18-61
+465
+466        <!-- Receivers -->
+467
+468        <receiver android:name="me.devsaki.hentoid.receiver.DownloadNotificationDeleteReceiver" />
+468-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:463:9-81
+468-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:463:19-78
+469        <receiver android:name="me.devsaki.hentoid.receiver.ArchiveNotificationSuccessReceiver" />
+469-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:465:9-81
+469-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:465:19-78
+470        <receiver android:name="me.devsaki.hentoid.receiver.DownloadNotificationPauseReceiver" />
+470-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:467:9-80
+470-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:467:19-77
+471        <receiver android:name="me.devsaki.hentoid.receiver.DuplicateNotificationStopReceiver" />
+471-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:469:9-80
+471-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:469:19-77
+472        <receiver android:name="me.devsaki.hentoid.receiver.AppUpdateDownloadReceiver" />
+472-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:471:9-72
+472-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:471:19-69
+473
+474        <!-- Providers -->
+475
+476        <provider
+477            android:name="androidx.core.content.FileProvider"
+477-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:476:13-62
+478            android:authorities="me.devsaki.cherry.provider.FileProvider"
+478-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:477:13-73
+479            android:enabled="true"
+479-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:478:13-35
+480            android:exported="false"
+480-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:479:13-37
+481            android:grantUriPermissions="true" >
+481-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:480:13-47
+482            <meta-data
+482-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:481:13-483:54
+483                android:name="android.support.FILE_PROVIDER_PATHS"
+483-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:482:17-67
+484                android:resource="@xml/file_paths" />
+484-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:483:17-51
+485        </provider>
+486
+487        <meta-data
+487-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:486:9-488:72
+488            android:name="io.fabric.ApiKey"
+488-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:487:13-44
+489            android:value="50ca85b53f91d01825ed7b8fea4ecd30134f448c" />
+489-->C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app\src\main\AndroidManifest.xml:488:13-69
+490
+491        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
+491-->[com.mikepenz:aboutlibraries:8.9.4] C:\Users\hrdq\.gradle\caches\transforms-3\67f195544990b11618cebd1bf1788e50\transformed\aboutlibraries-8.9.4\AndroidManifest.xml:10:9-80
+491-->[com.mikepenz:aboutlibraries:8.9.4] C:\Users\hrdq\.gradle\caches\transforms-3\67f195544990b11618cebd1bf1788e50\transformed\aboutlibraries-8.9.4\AndroidManifest.xml:10:19-77
+492
+493        <meta-data
+493-->[com.github.bumptech.glide:okhttp3-integration:4.15.1] C:\Users\hrdq\.gradle\caches\transforms-3\e6b29999a9eb744b51619c60f74ed928\transformed\okhttp3-integration-4.15.1\AndroidManifest.xml:10:9-12:43
+494            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+494-->[com.github.bumptech.glide:okhttp3-integration:4.15.1] C:\Users\hrdq\.gradle\caches\transforms-3\e6b29999a9eb744b51619c60f74ed928\transformed\okhttp3-integration-4.15.1\AndroidManifest.xml:11:13-84
+495            android:value="GlideModule" />
+495-->[com.github.bumptech.glide:okhttp3-integration:4.15.1] C:\Users\hrdq\.gradle\caches\transforms-3\e6b29999a9eb744b51619c60f74ed928\transformed\okhttp3-integration-4.15.1\AndroidManifest.xml:12:13-40
+496
+497        <receiver
+497-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:29:9-33:20
+498            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+498-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:30:13-85
+499            android:enabled="true"
+499-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:31:13-35
+500            android:exported="false" >
+500-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:32:13-37
+501        </receiver>
+502
+503        <service
+503-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:35:9-38:40
+504            android:name="com.google.android.gms.measurement.AppMeasurementService"
+504-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:36:13-84
+505            android:enabled="true"
+505-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:37:13-35
+506            android:exported="false" />
+506-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:38:13-37
+507        <service
+507-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:39:9-43:72
+508            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+508-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:40:13-87
+509            android:enabled="true"
+509-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:41:13-35
+510            android:exported="false"
+510-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:42:13-37
+511            android:permission="android.permission.BIND_JOB_SERVICE" />
+511-->[com.google.android.gms:play-services-measurement:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\2eaaad1e362bb76ec7ad73d47d0791f2\transformed\play-services-measurement-21.2.2\AndroidManifest.xml:43:13-69
+512        <service
+512-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:28:9-34:19
+513            android:name="com.google.firebase.components.ComponentDiscoveryService"
+513-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:29:13-84
+514            android:directBootAware="true"
+514-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hrdq\.gradle\caches\transforms-3\f7c33009649b5b33f1d39fc24f5cf9ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:34:13-43
+515            android:exported="false" >
+515-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:30:13-37
+516            <meta-data
+516-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:31:13-33:85
+517                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+517-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:32:17-139
+518                android:value="com.google.firebase.components.ComponentRegistrar" />
+518-->[com.google.android.gms:play-services-measurement-api:21.2.2] C:\Users\hrdq\.gradle\caches\transforms-3\b1e3b61eeca342bfdb27b1195f52a6d6\transformed\play-services-measurement-api-21.2.2\AndroidManifest.xml:33:17-82
+519            <meta-data
+519-->[com.google.firebase:firebase-crashlytics:18.3.6] C:\Users\hrdq\.gradle\caches\transforms-3\6dea36dea9500a1c2a78953aefa0f283\transformed\firebase-crashlytics-18.3.6\AndroidManifest.xml:17:13-19:85
+520                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+520-->[com.google.firebase:firebase-crashlytics:18.3.6] C:\Users\hrdq\.gradle\caches\transforms-3\6dea36dea9500a1c2a78953aefa0f283\transformed\firebase-crashlytics-18.3.6\AndroidManifest.xml:18:17-115
+521                android:value="com.google.firebase.components.ComponentRegistrar" />
+521-->[com.google.firebase:firebase-crashlytics:18.3.6] C:\Users\hrdq\.gradle\caches\transforms-3\6dea36dea9500a1c2a78953aefa0f283\transformed\firebase-crashlytics-18.3.6\AndroidManifest.xml:19:17-82
+522            <meta-data
+522-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hrdq\.gradle\caches\transforms-3\42edb7f0f067f92cf9a660a4cdf3bd97\transformed\firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+523                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+523-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hrdq\.gradle\caches\transforms-3\42edb7f0f067f92cf9a660a4cdf3bd97\transformed\firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+524                android:value="com.google.firebase.components.ComponentRegistrar" />
+524-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\hrdq\.gradle\caches\transforms-3\42edb7f0f067f92cf9a660a4cdf3bd97\transformed\firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+525        </service>
+526
+527        <provider
+527-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hrdq\.gradle\caches\transforms-3\f7c33009649b5b33f1d39fc24f5cf9ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:25:9-30:39
+528            android:name="com.google.firebase.provider.FirebaseInitProvider"
+528-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hrdq\.gradle\caches\transforms-3\f7c33009649b5b33f1d39fc24f5cf9ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:26:13-77
+529            android:authorities="me.devsaki.cherry.firebaseinitprovider"
+529-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hrdq\.gradle\caches\transforms-3\f7c33009649b5b33f1d39fc24f5cf9ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:27:13-72
+530            android:directBootAware="true"
+530-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hrdq\.gradle\caches\transforms-3\f7c33009649b5b33f1d39fc24f5cf9ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:28:13-43
+531            android:exported="false"
+531-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hrdq\.gradle\caches\transforms-3\f7c33009649b5b33f1d39fc24f5cf9ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:29:13-37
+532            android:initOrder="100" />
+532-->[com.google.firebase:firebase-common:20.3.2] C:\Users\hrdq\.gradle\caches\transforms-3\f7c33009649b5b33f1d39fc24f5cf9ef\transformed\firebase-common-20.3.2\AndroidManifest.xml:30:13-36
+533
+534        <meta-data
+534-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hrdq\.gradle\caches\transforms-3\807c072e7a9d8d96bd5d448450907703\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+535            android:name="com.google.android.gms.version"
+535-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hrdq\.gradle\caches\transforms-3\807c072e7a9d8d96bd5d448450907703\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+536            android:value="@integer/google_play_services_version" />
+536-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\hrdq\.gradle\caches\transforms-3\807c072e7a9d8d96bd5d448450907703\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+537
+538        <provider
+538-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:29:9-37:20
+539            android:name="androidx.startup.InitializationProvider"
+539-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:30:13-67
+540            android:authorities="me.devsaki.cherry.androidx-startup"
+540-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:31:13-68
+541            android:exported="false" >
+541-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:32:13-37
+542            <meta-data
+542-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:34:13-36:52
+543                android:name="androidx.work.WorkManagerInitializer"
+543-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:35:17-68
+544                android:value="androidx.startup" />
+544-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:36:17-49
+545            <meta-data
+545-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hrdq\.gradle\caches\transforms-3\ff082538456137a204e6e7de060473a4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+546                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+546-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hrdq\.gradle\caches\transforms-3\ff082538456137a204e6e7de060473a4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+547                android:value="androidx.startup" />
+547-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hrdq\.gradle\caches\transforms-3\ff082538456137a204e6e7de060473a4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+548            <meta-data
+548-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\hrdq\.gradle\caches\transforms-3\a9d63b61a37b22f03844ba1b23d6635c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+549                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+549-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\hrdq\.gradle\caches\transforms-3\a9d63b61a37b22f03844ba1b23d6635c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+550                android:value="androidx.startup" />
+550-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\hrdq\.gradle\caches\transforms-3\a9d63b61a37b22f03844ba1b23d6635c\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+551            <meta-data
+551-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+552                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+552-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+553                android:value="androidx.startup" />
+553-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+554        </provider>
+555
+556        <service
+556-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:39:9-45:35
+557            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+557-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:40:13-88
+558            android:directBootAware="false"
+558-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:41:13-44
+559            android:enabled="@bool/enable_system_alarm_service_default"
+559-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:42:13-72
+560            android:exported="false" />
+560-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:43:13-37
+561        <service
+561-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:46:9-52:35
+562            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+562-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:47:13-84
+563            android:directBootAware="false"
+563-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:48:13-44
+564            android:enabled="@bool/enable_system_job_service_default"
+564-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:49:13-70
+565            android:exported="true"
+565-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:50:13-36
+566            android:permission="android.permission.BIND_JOB_SERVICE" />
+566-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:51:13-69
+567        <service
+567-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:53:9-59:35
+568            android:name="androidx.work.impl.foreground.SystemForegroundService"
+568-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:54:13-81
+569            android:directBootAware="false"
+569-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:55:13-44
+570            android:enabled="@bool/enable_system_foreground_service_default"
+570-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:56:13-77
+571            android:exported="false" />
+571-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:57:13-37
+572
+573        <receiver
+573-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:61:9-66:35
+574            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+574-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:62:13-88
+575            android:directBootAware="false"
+575-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:63:13-44
+576            android:enabled="true"
+576-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:64:13-35
+577            android:exported="false" />
+577-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:65:13-37
+578        <receiver
+578-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:67:9-77:20
+579            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+579-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:68:13-106
+580            android:directBootAware="false"
+580-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:69:13-44
+581            android:enabled="false"
+581-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:70:13-36
+582            android:exported="false" >
+582-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:71:13-37
+583            <intent-filter>
+583-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:73:13-76:29
+584                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+584-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:74:17-87
+584-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:74:25-84
+585                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+585-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:75:17-90
+585-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:75:25-87
+586            </intent-filter>
+587        </receiver>
+588        <receiver
+588-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:78:9-88:20
+589            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+589-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:79:13-104
+590            android:directBootAware="false"
+590-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:80:13-44
+591            android:enabled="false"
+591-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:81:13-36
+592            android:exported="false" >
+592-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:82:13-37
+593            <intent-filter>
+593-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:84:13-87:29
+594                <action android:name="android.intent.action.BATTERY_OKAY" />
+594-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:85:17-77
+594-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:85:25-74
+595                <action android:name="android.intent.action.BATTERY_LOW" />
+595-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:86:17-76
+595-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:86:25-73
+596            </intent-filter>
+597        </receiver>
+598        <receiver
+598-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:89:9-99:20
+599            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+599-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:90:13-104
+600            android:directBootAware="false"
+600-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:91:13-44
+601            android:enabled="false"
+601-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:92:13-36
+602            android:exported="false" >
+602-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:93:13-37
+603            <intent-filter>
+603-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:95:13-98:29
+604                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+604-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:96:17-83
+604-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:96:25-80
+605                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+605-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:97:17-82
+605-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:97:25-79
+606            </intent-filter>
+607        </receiver>
+608        <receiver
+608-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:100:9-109:20
+609            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+609-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:101:13-103
+610            android:directBootAware="false"
+610-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:102:13-44
+611            android:enabled="false"
+611-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:103:13-36
+612            android:exported="false" >
+612-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:104:13-37
+613            <intent-filter>
+613-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:106:13-108:29
+614                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+614-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:107:17-79
+614-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:107:25-76
+615            </intent-filter>
+616        </receiver>
+617        <receiver
+617-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:110:9-121:20
+618            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+618-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:111:13-88
+619            android:directBootAware="false"
+619-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:112:13-44
+620            android:enabled="false"
+620-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:113:13-36
+621            android:exported="false" >
+621-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:114:13-37
+622            <intent-filter>
+622-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:116:13-120:29
+623                <action android:name="android.intent.action.BOOT_COMPLETED" />
+623-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:117:17-79
+623-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:117:25-76
+624                <action android:name="android.intent.action.TIME_SET" />
+624-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:118:17-73
+624-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:118:25-70
+625                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+625-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:119:17-81
+625-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:119:25-78
+626            </intent-filter>
+627        </receiver>
+628        <receiver
+628-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:122:9-131:20
+629            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+629-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:123:13-99
+630            android:directBootAware="false"
+630-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:124:13-44
+631            android:enabled="@bool/enable_system_alarm_service_default"
+631-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:125:13-72
+632            android:exported="false" >
+632-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:126:13-37
+633            <intent-filter>
+633-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:128:13-130:29
+634                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+634-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:129:17-98
+634-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:129:25-95
+635            </intent-filter>
+636        </receiver>
+637        <receiver
+637-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:132:9-142:20
+638            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+638-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:133:13-78
+639            android:directBootAware="false"
+639-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:134:13-44
+640            android:enabled="true"
+640-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:135:13-35
+641            android:exported="true"
+641-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:136:13-36
+642            android:permission="android.permission.DUMP" >
+642-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:137:13-57
+643            <intent-filter>
+643-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:139:13-141:29
+644                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+644-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:140:17-88
+644-->[androidx.work:work-runtime:2.8.1] C:\Users\hrdq\.gradle\caches\transforms-3\5340431d3fe8572332900f99938d20d1\transformed\work-runtime-2.8.1\AndroidManifest.xml:140:25-85
+645            </intent-filter>
+646        </receiver>
+647
+648        <uses-library
+648-->[androidx.window:window:1.0.0] C:\Users\hrdq\.gradle\caches\transforms-3\da162bed872f6f492d2fb166dc0b5e2f\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+649            android:name="androidx.window.extensions"
+649-->[androidx.window:window:1.0.0] C:\Users\hrdq\.gradle\caches\transforms-3\da162bed872f6f492d2fb166dc0b5e2f\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+650            android:required="false" />
+650-->[androidx.window:window:1.0.0] C:\Users\hrdq\.gradle\caches\transforms-3\da162bed872f6f492d2fb166dc0b5e2f\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+651        <uses-library
+651-->[androidx.window:window:1.0.0] C:\Users\hrdq\.gradle\caches\transforms-3\da162bed872f6f492d2fb166dc0b5e2f\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+652            android:name="androidx.window.sidecar"
+652-->[androidx.window:window:1.0.0] C:\Users\hrdq\.gradle\caches\transforms-3\da162bed872f6f492d2fb166dc0b5e2f\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+653            android:required="false" />
+653-->[androidx.window:window:1.0.0] C:\Users\hrdq\.gradle\caches\transforms-3\da162bed872f6f492d2fb166dc0b5e2f\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+654
+655        <service
+655-->[androidx.room:room-runtime:2.5.0] C:\Users\hrdq\.gradle\caches\transforms-3\52fbdfffe1c4594cd81ec561e5657d86\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+656            android:name="androidx.room.MultiInstanceInvalidationService"
+656-->[androidx.room:room-runtime:2.5.0] C:\Users\hrdq\.gradle\caches\transforms-3\52fbdfffe1c4594cd81ec561e5657d86\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+657            android:directBootAware="true"
+657-->[androidx.room:room-runtime:2.5.0] C:\Users\hrdq\.gradle\caches\transforms-3\52fbdfffe1c4594cd81ec561e5657d86\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+658            android:exported="false" />
+658-->[androidx.room:room-runtime:2.5.0] C:\Users\hrdq\.gradle\caches\transforms-3\52fbdfffe1c4594cd81ec561e5657d86\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+659        <service
+659-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\4f322942d08205395439517a3c4026c9\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+660            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+660-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\4f322942d08205395439517a3c4026c9\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+661            android:exported="false" >
+661-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\4f322942d08205395439517a3c4026c9\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+662            <meta-data
+662-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\4f322942d08205395439517a3c4026c9\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+663                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+663-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\4f322942d08205395439517a3c4026c9\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+664                android:value="cct" />
+664-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\4f322942d08205395439517a3c4026c9\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+665        </service>
+666        <service
+666-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\c01b3d186fbe5034dfc168f94e8463d8\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+667            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+667-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\c01b3d186fbe5034dfc168f94e8463d8\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+668            android:exported="false"
+668-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\c01b3d186fbe5034dfc168f94e8463d8\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+669            android:permission="android.permission.BIND_JOB_SERVICE" >
+669-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\c01b3d186fbe5034dfc168f94e8463d8\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+670        </service>
+671
+672        <receiver
+672-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\c01b3d186fbe5034dfc168f94e8463d8\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+673            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+673-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\c01b3d186fbe5034dfc168f94e8463d8\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+674            android:exported="false" />
+674-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\hrdq\.gradle\caches\transforms-3\c01b3d186fbe5034dfc168f94e8463d8\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+675        <receiver
+675-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+676            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+676-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+677            android:directBootAware="false"
+677-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+678            android:enabled="true"
+678-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+679            android:exported="true"
+679-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+680            android:permission="android.permission.DUMP" >
+680-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+681            <intent-filter>
+681-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+682                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+682-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+682-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+683            </intent-filter>
+684            <intent-filter>
+684-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+685                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+685-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+685-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+686            </intent-filter>
+687            <intent-filter>
+687-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+688                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+688-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+688-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+689            </intent-filter>
+690            <intent-filter>
+690-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+691                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+691-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+691-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\hrdq\.gradle\caches\transforms-3\16a3e900399e193ba85aef3064925b2a\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+692            </intent-filter>
+693        </receiver>
+694    </application>
+695
+696</manifest>

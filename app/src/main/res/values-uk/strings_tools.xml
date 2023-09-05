@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Activity Title -->
+    <string name="tools_title">Інструменти</string>
+    <!-- Menu item -->
+    <string name="tools_screen_import_export">Імпорт та експорт</string>
+
+    <!-- Button -->
+    <string name="tools_export_library_title">Експортувати метадані</string>
+    <!-- Button description -->
+    <string name="tools_export_library_summary">Експортувати книги з Hentoid в JSON</string>
+    <!-- Button -->
+    <string name="tools_import_library_title">Імпортувати метадані</string>
+    <!-- Button description -->
+    <string name="tools_import_library_summary">Відновити книги в Hentoid з JSON</string>
+    <!-- Subheading -->
+    <string name="tools_screen_cat_settings">Налаштування</string>
+    <!-- Button -->
+    <string name="tools_export_settings_title">Експортувати налаштування</string>
+    <!-- Button description -->
+    <string name="tools_export_settings_summary">Експортувати налаштування в JSON</string>
+    <!-- Button -->
+    <string name="tools_import_settings_title">Імпортувати налаштування</string>
+    <!-- Button description -->
+    <string name="tools_import_settings_summary">Відновити налаштування з JSON</string>
+
+    <!-- Menu item -->
+    <string name="tools_duplicate_detector_title">Пошук дублікатів</string>
+    <!-- Menu item description -->
+    <string name="tools_duplicate_detector_summary">Пошук та видалення ідентичних копій книг</string>
+
+    <!-- Menu item -->
+    <string name="tools_screen_cache">Керування кешем</string>
+    <!-- Button -->
+    <string name="tools_cache_browser">Очистити кеш браузера</string>
+    <!-- Toast notification -->
+    <string name="tools_cache_browser_success">Кеш WebView успішно очищено</string>
+    <string name="tools_cache_browser_missing_webview">WebView недоступно, неможливо очистити кеш зараз</string>
+    <string name="tools_cache_browser_updating_webview">WebView зараз оновлюється, поки неможливо очистити кеш</string>
+    <!-- Button -->
+    <string name="tools_cache_app">Очистити кеш додатка</string>
+    <!-- Toast notification -->
+    <string name="tools_cache_app_success">Кеш додатка успішно очищено</string>
+
+    <!-- Menu item -->
+    <string name="tools_latest_logs_title">Логи додатка</string>
+    <!-- Menu item description -->
+    <string name="tools_latest_logs_summary">Переглянути останні логи додатка</string>
+    <string name="tools_import_empty_books_intro">Якщо не виявлено папки із зображеннями…</string>
+    <string name="tools_import_empty_books_entries_1">Не імпортувати</string>
+    <string name="tools_import_empty_books_entries_2">Імпортувати як порожню книгу</string>
+    <string name="tools_import_empty_books_entries_3">Імпортувати для стримінґу, якщо можливо</string>
+    <string name="tools_import_empty_books_entries_4">Додати до черги помилок</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Custom style items -->
+    <attr name="drawer_header_diagonal" format="reference" />
+    <attr name="card_surface" format="reference" />
+    <attr name="card_pressed" format="reference" />
+    <attr name="card_selected" format="reference" />
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomSubsamplingScaleImageView">
+        <attr name="src" format="reference" />
+        <attr name="assetName" format="string" />
+        <attr name="panEnabled" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="quickScaleEnabled" format="boolean" />
+        <attr name="tileBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ListPickerView">
+        <attr name="title" format="string" localization="suggested" />
+        <attr name="entries" format="reference" />
+        <attr name="values" format="reference" />
+    </declare-styleable>
+
+</resources>

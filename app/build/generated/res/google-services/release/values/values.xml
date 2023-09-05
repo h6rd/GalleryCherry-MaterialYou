@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">397865223434-oe7qqp6t9s8m12jlarcsm055jheoc5ps.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://gallerycherry-1f784.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">397865223434</string>
+    <string name="google_api_key" translatable="false">AIzaSyCrpwX4CP0apHb_1BJuBrdoC7Ax4ptxkP4</string>
+    <string name="google_app_id" translatable="false">1:397865223434:android:6262fe6fcfcdda3d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCrpwX4CP0apHb_1BJuBrdoC7Ax4ptxkP4</string>
+    <string name="google_storage_bucket" translatable="false">gallerycherry-1f784.appspot.com</string>
+    <string name="project_id" translatable="false">gallerycherry-1f784</string>
+</resources>

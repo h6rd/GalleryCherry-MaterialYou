@@ -1,0 +1,27 @@
+<lint-module
+    format="1"
+    dir="C:\Users\hrdq\Desktop\GalleryCherry-MaterialYou\app"
+    name=":app"
+    type="APP"
+    maven="GalleryCherry-MaterialYou:app:"
+    gradle="7.4.0"
+    buildFolder="build"
+    bootClassPath="C:\Users\hrdq\AppData\Local\Android\Sdk\platforms\android-33\android.jar;C:\Users\hrdq\AppData\Local\Android\Sdk\build-tools\30.0.3\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true">
+    <severities>
+      <severity
+        id="ExtraTranslation"
+        severity="INFORMATIONAL" />
+      <severity
+        id="MissingTranslation"
+        severity="INFORMATIONAL" />
+    </severities>
+  </lintOptions>
+  <variant name="release"/>
+</lint-module>

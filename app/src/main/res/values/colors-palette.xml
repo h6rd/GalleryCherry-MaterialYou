@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="primary">@color/dark_red</color>
+    <color name="primary_variant">@color/very_dark_red</color>
+    <color name="on_primary">@color/white_opacity_87</color>
+    <color name="secondary">@color/accent_red</color>
+    <color name="secondary_variant">@color/light_red</color>
+    <color name="on_secondary">@color/white_opacity_87</color>
+    <color name="surface">@color/white</color>
+    <color name="on_surface">@color/white_opacity_87</color>
+    <color name="window_background">@color/taupe</color>
+    <color name="on_background">@color/white_opacity_87</color>
+    <color name="ripple">@color/light_red</color>
+-->
+    <!-- Content cards -->
+    <color name="card_surface">@color/white</color>
+    <color name="card_selected">@color/light_red</color>
+    <color name="card_pressed">@color/light_gray</color>
+    <color name="card_tags">@color/medium_gray</color>
+
+    <!-- App palette -->
+    <color name="dark_red">@color/background_v2</color>
+    <color name="very_dark_red">@color/background_v2</color>
+    <color name="super_dark_red">@color/purple_light</color>
+    <color name="taupe">@color/background_v2</color>
+    <color name="taupe_elevated_1">@color/green</color>
+    <color name="taupe_elevated_2">@color/background_v2</color>
+    <color name="taupe_elevated_3">@color/background_v2</color>
+    <color name="taupe_elevated_4">@color/green</color>
+    <color name="accent_red">@color/accent</color>
+    <color name="light_red">@color/orange</color>
+    <color name="very_dark_pink">#6d0721</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="cod_gray">#121212</color>
+    <color name="light_gray">#aaaaaa</color>
+    <color name="medium_gray">#888888</color>
+    <color name="dark_gray">#FF444444</color>
+    <color name="black_opacity_12">#1F000000</color>
+    <color name="black_opacity_25">#40000000</color>
+    <color name="black_opacity_50">#80000000</color>
+    <color name="black_opacity_87">#DE000000</color>
+    <color name="white_opacity_12">#1FFFFFFF</color>
+    <color name="white_opacity_25">#40FFFFFF</color>
+    <color name="white_opacity_50">#80FFFFFF</color>
+    <color name="white_opacity_66">#AAFFFFFF</color>
+    <color name="white_opacity_87">#DEFFFFFF</color>
+
+    <!-- Derived Colors (e.g.; with alpha, etc.) -->
+    <color name="transparent">#00000000</color>
+    <color name="item_highlight">#28FFFFFF</color>
+
+    <!-- Alert colors -->
+    <color name="orange">@android:color/holo_orange_dark</color>
+    <color name="red">@android:color/holo_red_dark</color>
+
+    <!-- Green (for validation feedback) -->
+    <color name="green">#70AD47</color>
+
+    <!-- Frozen title -->
+    <color name="frozen_blue">#8034cceb</color>
+
+    <!-- Attribute type colors -->
+    <color name="purple_light">@android:color/holo_purple</color>
+    <color name="purple_dark">#8600C4</color>
+    <color name="blue">@android:color/holo_blue_dark</color>
+    <color name="bronze">@android:color/holo_orange_light</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.IntroActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="@string/slide_02_header"
+        android:textSize="28sp"
+        app:fontFamily="sans-serif-thin" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/mode_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mode_browser"
+            style="@style/HentoidButtonOutlinedStyle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:gravity="start|center_vertical"
+            android:insetBottom="8dp"
+            android:text="@string/slide_02_browser_mode_title"
+            app:icon="@drawable/ic_attribute_source" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mode_library"
+            style="@style/HentoidButtonOutlinedStyle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:gravity="start|center_vertical"
+            android:insetTop="8dp"
+            android:text="@string/slide_02_library_mode_title"
+            app:icon="@drawable/selector_download_action" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:id="@+id/desc_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/slide_02_browser_mode_description"
+        android:textSize="@dimen/text_subtitle_1"
+        app:fontFamily="sans-serif-thin" />
+
+    <!-- Placeholder for the bottom progress bar -->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="64dp" />
+</LinearLayout>
